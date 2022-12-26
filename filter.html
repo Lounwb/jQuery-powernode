@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基本过滤器</title>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#btn1").click(function() {
+					$("div:first").html("<font color='red'>这是div1</font>")
+
+				})
+				$("#btn2").click(function() {
+					$("div:last").html("<font color='red'>这是div3</font>")
+
+				})
+				$("#btn3").click(function() {
+					$("div:eq(1)").html("<font color='red'>这是div2</font>")
+
+				})
+				$("#btn4").click(function() {
+					$("div:lt(2)").html("<font color='red'>这是div1和div2</font>")
+
+				})
+				$("#btn5").click(function() {
+					$("div:gt(0)").html("<font color='red'>这是div2和div3</font>")
+
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+
+		</div>
+		<div id="div2">
+
+		</div>
+		<div id="div3">
+
+		</div>
+		<button type="button" id="btn1">按钮1</button>
+		<button type="button" id="btn2">按钮2</button>
+		<button type="button" id="btn3">按钮3</button>
+		<button type="button" id="btn4">按钮4</button>
+		<button type="button" id="btn5">按钮5</button>
+	</body>
+</html>

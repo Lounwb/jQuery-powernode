@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js" /></script>
+		<script type="text/javascript">
+
+		</script>
+		<style type="text/css">	
+			@import url("css/style.css");
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#btn1").click(function (){
+					$("#one").css("background","red")
+				})
+				$("#btn2").click(function (){
+					$("#two").css("background","yellow")
+				})
+				$("#btn3").click(function (){
+					$("#three").css("background","black")
+				})
+				$("#btn4").click(function (){ 
+					$(".divSet").css("background","green")
+				})
+				$("#btn5").click(function(){
+					$("#one,#three").css("background","blue")
+				})
+			}) 
+		</script>
+	</head>
+	<body>
+		<div id="one" class="divSet">div1</div><br>
+		<div id="two" class="divSet">div2</div><br>
+		<div id="three" class="divSet">div3</div>
+		<button type="button" id="btn1">修改div1</button><br>
+		<button type="button" id="btn2">修改div2</button><br>
+		<button type="button" id="btn3">修改div3</button><br>
+		<button type="button" id="btn4">修改所有</button><br>
+		<button type="button" id="btn5">修改div1,div3</button><br>
+	</body>
+</html>

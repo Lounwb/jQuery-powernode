@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js" /></script>
+		<script type="text/javascript">
+
+		</script>
+		<script type="text/javascript">
+			function func1(){
+				var $obj = $(":text")
+				alert($obj.val())
+			}
+			function func2(){
+				var $obj = $(":radio")
+				for (var i = 0; i < $obj.length; i++) {
+					var obj = $obj[i]
+					alert(obj.value)
+				}
+			}
+			function func3(){
+				var $obj = $(":checkbox")
+				for (var i = 0; i < $obj.length; i++) {
+					var obj = $obj[i]
+					alert(obj.value)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="txt1" value="文本框..." /><br>
+		<input type="radio" id="" value="man" />男<br>
+		<input type="radio" id="" value="woman" />女<br>
+		<input type="checkbox" value="bike" />骑行<br>
+		<input type="checkbox" value="football" />足球<br>
+		<input type="checkbox" value="music" />音乐<br>
+		<p>按钮功能</p>
+		<button type="button" id="btn1" onclick="func1()">文本框</button><br>
+		<button type="button" id="btn2" onclick="func2()">单选框</button><br>
+		<button type="button" id="btn3" onclick="func3()">复选框</button><br>
+	</body>
+</html>
